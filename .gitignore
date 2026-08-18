@@ -1,0 +1,12 @@
+# 个人数据（勿提交）
+求职投递台账*.xlsx
+简历素材库.md
+resume_material.md
+priority_config.json
+*.local.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
