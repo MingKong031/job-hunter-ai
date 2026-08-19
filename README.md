@@ -36,19 +36,21 @@ python scripts/generate_tracker.py --config priority_config.json --output 求职
 {
   "max_batch": 20,                       // 每日最多写入的候选数
   "weights": { "industry": 10, "role": 5 },  // 行业/岗位打分权重
-  "exclude_keywords": ["销售代表", "客服", "纯硬件"],  // 命中的岗位直接排除
+  "exclude_keywords": ["关键词示例A", "关键词示例B"],  // 命中的岗位直接排除
   "industry_priority": [                 // 行业阶梯：level 越小越优先
-    { "level": 1, "name": "具身智能", "match_keywords": ["机器人", "embodied"] },
-    { "level": 2, "name": "具身智能上游(AI)", "match_keywords": ["大模型", "机器视觉", "传感器"] }
+    { "level": 1, "name": "行业A", "match_keywords": ["关键词A1", "关键词A2"] },
+    { "level": 2, "name": "行业B", "match_keywords": ["关键词B1", "关键词B2"] }
     // ... 其他行业，level 越大越靠后
   ],
   "role_priority": [                     // 岗位阶梯
-    { "level": 1, "name": "出海岗(GTM,不含销售)", "match_keywords": ["出海", "GTM", "海外"] },
-    { "level": 2, "name": "产品经理", "match_keywords": ["产品经理", "AI产品"] }
+    { "level": 1, "name": "岗位A", "match_keywords": ["关键词A1", "关键词A2"] },
+    { "level": 2, "name": "岗位B", "match_keywords": ["关键词B1", "关键词B2"] }
     // ...
   ]
 }
 ```
+
+> 以上为**演示结构**，`priority_config.example.json` 中的行业/岗位名称均为占位示例，请替换成你自己的偏好。
 
 - **打分**：行业得分 = (最大行业层级 + 1 − 层级) × 行业权重；岗位得分同理。综合分 = 两者之和，越高越优先。
 - **改优先级**：编辑 `priority_config.json`，重新生成台账 / 让自动化重新读取即可，零代码。
