@@ -1,33 +1,25 @@
 {
   "$schema": "job-hunter-priority-config-v1",
-  "说明": "修改本文件即可更换优先级，无需改代码。层级 level 越小越优先；match_keywords 用于给岗位归类（命中即算该行业/岗位）。复制本文件为 priority_config.json 后使用。",
+  "说明": "修改本文件即可更换优先级，无需改代码。层级 level 越小越优先；match_keywords 用于给岗位归类（命中即算该行业/岗位）。复制本文件为 priority_config.json 后使用。示例内容仅为演示结构，请替换成你自己的偏好。",
   "max_batch": 20,
   "weights": {
     "industry": 10,
     "role": 5
   },
   "exclude_keywords": [
-    "销售代表",
-    "电话销售",
-    "客服",
-    "纯硬件",
-    "普工"
+    "关键词示例A",
+    "关键词示例B"
   ],
   "industry_priority": [
-    { "level": 1, "name": "具身智能", "match_keywords": ["具身智能", "机器人", "人形机器人", "embodied"] },
-    { "level": 2, "name": "具身智能上游(AI/感知/控制)", "match_keywords": ["大模型", "多模态", "机器视觉", "智能体", "AI", "传感器", "电机", "控制器", "仿真"] },
-    { "level": 3, "name": "游戏", "match_keywords": ["游戏", "手游", "端游", "game"] },
-    { "level": 4, "name": "宠物", "match_keywords": ["宠物", "pet"] },
-    { "level": 5, "name": "情趣用品", "match_keywords": ["情趣", "成人用品"] },
-    { "level": 6, "name": "其他", "match_keywords": [] }
+    { "level": 1, "name": "行业A（示例：替换为你最想去的行业）", "match_keywords": ["关键词A1", "关键词A2"] },
+    { "level": 2, "name": "行业B（示例）", "match_keywords": ["关键词B1", "关键词B2"] },
+    { "level": 3, "name": "行业C（示例）", "match_keywords": ["关键词C1"] },
+    { "level": 4, "name": "其他（兜底，勿删）", "match_keywords": [] }
   ],
   "role_priority": [
-    { "level": 1, "name": "出海岗(GTM,不含销售)", "match_keywords": ["出海", "GTM", "海外", "国际", "global", "增长"] },
-    { "level": 2, "name": "产品经理", "match_keywords": ["产品经理", "AI产品", "软硬协同", "硬件产品", "产品负责人"] },
-    { "level": 3, "name": "产品运营/产品助理", "match_keywords": ["产品运营", "产品助理"] },
-    { "level": 4, "name": "新媒体编导", "match_keywords": ["编导", "短视频编导", "导演"] },
-    { "level": 5, "name": "AI漫剧制作", "match_keywords": ["AI漫剧", "漫剧", "AI短剧"] },
-    { "level": 6, "name": "新媒体运营", "match_keywords": ["新媒体运营", "内容运营", "短视频运营", "运营"] },
-    { "level": 7, "name": "其他", "match_keywords": [] }
+    { "level": 1, "name": "岗位A（示例：替换为你最想做的岗位）", "match_keywords": ["关键词A1", "关键词A2"] },
+    { "level": 2, "name": "岗位B（示例）", "match_keywords": ["关键词B1", "关键词B2"] },
+    { "level": 3, "name": "岗位C（示例）", "match_keywords": ["关键词C1"] },
+    { "level": 4, "name": "其他（兜底，勿删）", "match_keywords": [] }
   ]
 }
