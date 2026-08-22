@@ -9,6 +9,8 @@
 - 📝 **按 JD 改写简历**：基于你的真实经历（resume_material）逐岗生成适配摘要，不编造
 - 📊 **投递台账**：13 列记录一切，含官网自建账号的账号/密码、所用简历版本
 - ✅ **半自动确认制**：AI 只做搜索/改写/记录，提交永远是你点头后人工完成
+- 🔓 **ATS 适配知识库**：主流校招系统（飞书/Moka/北森等）登录方式与自动化可行性速查，判断"能不能自动/要配合什么"
+- 🤖 **飞书系两阶段投递法**：登录后可无人值守批量投递（拿职位 ID 与提交分离，绕过登录态精简视图）
 
 ## 快速开始
 
@@ -64,8 +66,12 @@ job-hunter-ai/
 ├── priority_config.example.json   # 优先级配置示例（可配置核心）
 ├── resume_material.example.md     # 简历素材库模板（真实经历原料）
 ├── automation_prompt.md           # 每日自动化 prompt 模板
+├── docs/
+│   ├── feishu-auto-apply.md       # 飞书系无人值守投递流程（两阶段投递法）
+│   └── ats-adaptation-guide.md    # 主流校招 ATS 系统适配知识库
 └── scripts/
-    └── generate_tracker.py        # 由配置生成投递台账 xlsx
+    ├── generate_tracker.py        # 由配置生成投递台账 xlsx
+    └── upload_repo.py             # 发布/更新本仓库（GitHub Contents API，git 通道受限时用）
 ```
 
 ## 安全与合规
