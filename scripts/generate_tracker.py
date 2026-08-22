@@ -23,7 +23,7 @@ from openpyxl.worksheet.datavalidation import DataValidation
 DEFAULT_CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "priority_config.example.json")
 
 HEADERS = [
-    "编号", "投递日期", "公司名称", "岗位名称", "投递截止时间",
+    "编号", "投递日期", "投递截止时间", "公司名称", "岗位名称",
     "投递渠道", "JD/投递链接", "是否官网自建账号", "账号", "密码", "所用简历版本",
     "确认状态", "投递状态", "备注",
 ]
