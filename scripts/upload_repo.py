@@ -17,9 +17,13 @@ BRANCH = "main"
 BASE = f"https://api.github.com/repos/{REPO}/contents"
 
 FILES = [
+    "README.md",
+    "automation_prompt.md",
+    "priority_config.example.json",
+    "resume_material.example.md",
     "docs/ats-adaptation-guide.md",
     "docs/feishu-auto-apply.md",
-    "README.md",
+    "scripts/generate_tracker.py",
     "scripts/upload_repo.py",
 ]
 
